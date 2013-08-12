@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Westford Academy Math Team</title>
+<script type="text/javascript" src="scripts/tabs.js"></script>
+<script type="text/javascript" src="scripts/shared.js"></script>
+<style type="text/css">
+body {
+	background-image: url("images/white_sand.png");
+	color: #FFF;
+}
+#mainLogo {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	min-width: 864px;
+}
+#tabFrame {
+	display:block;
+	height: 750px;
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0px;
+	background-color:#FFFFFF;
+}
+#tabTable {
+	table-layout: fixed;
+	margin: 0 auto;
+	width: 1100px;
+}
+.tabCell {
+	background-color: #DDDDDD;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: #000;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: ridge;
+	border-right-style: ridge;
+	border-bottom-style: none;
+	border-left-style: ridge;
+	border-top-color: #EEEEEE;
+	border-right-color: #EEEEEE;
+	border-bottom-color: #EEEEEE;
+	border-left-color: #EEEEEE;
+}
+.tabCell:hover {
+	background-color: #00CC33;
+	border: 3px solid #00CC33;
+	color: #EEEEEE;
+}
+.selectedTabCell {
+	border: 3px solid #009933;
+	background-color: #009933;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	color: #EEEEEE;
+	text-decoration: underline;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.spacerCell {
+	width: 1%;
+}
+</style>
+</head>
+
+<body onload="swapTab('frames/theteam.html',document.getElementById('initTab'));">
+<img src="images/mainLogo.png" width="864" height="144" id="mainLogo">
+<table id="tabTable">
+	<tr>
+    <td class="tabCell" id="initTab" onclick="swapTab('frames/theteam.html',this);">The Team</td>
+    <td class="spacerCell"></td>
+    <td class="tabCell" id="problemsTab" onclick="swapTab('frames/problems.html',this);">Practice Problems</td>
+    <td class="spacerCell"></td>
+    <td class="tabCell" id="contestsTab" onclick="swapTab('frames/contests.html',this);">Contests</td>
+    <td class="spacerCell"></td>
+    <td class="tabCell" id="resultsTab" onclick="swapTab('frames/results.html',this);">Results and Accolades</td>
+    <td class="spacerCell"></td>
+    <td class="tabCell" id="picturesTab" onclick="swapTab('frames/pictures.html',this);">Pictures</td>
+    <td class="spacerCell"></td>
+    <td class="tabCell" id="leaderTab" onclick="swapTab('frames/leadership.html',this);">Team Leadership</td>
+    </tr>
+</table>
+<iframe id="tabFrame" onload="javascript:rename();" frameborder="0"></iframe>
+</body>
+</html>
