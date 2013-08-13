@@ -13,7 +13,12 @@ body {
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
-}.redText {
+}
+.centerTable {
+	margin-left:auto;
+	margin-right:auto;
+}
+.redText {
 	font-weight: bold;
 	color: #C00;
 }
