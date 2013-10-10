@@ -9,16 +9,27 @@
 <style type="text/css">
 .scoreTile {
 	float: left;
-	width: 200px;
+	width: 198px;
+  height: 272px;
 	margin-top: 5px;
 	margin-right: 5px;
 	margin-bottom: 5px;
 	margin-left: 5px;
+  border: dotted;
+  border-width: 1px;
+  position: relative;
 }
 .allScores {
-	width:630px;
-	margin-left:auto;
-	margin-right:auto;
+	width: 630px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.bigScoreText {
+  font-size: 160%;
+  text-align: center;
+}
+td {
+  height:23px;
 }
 </style>
 </head>
@@ -27,6 +38,51 @@
 <div class="title">Results and Accolades</div>
 <br/>
 <div class="allScores">
+<div class="scoreTile">
+<div class="centeredText"><strong>MML: 2013-2014</strong></div><br/>
+<table width="200" border="1" class="centerTable">
+  <tr>
+    <td><strong>Meet</strong></td>
+    <td><strong>Score</strong></td>
+    <td><strong>Ranking</strong></td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>138</td>
+    <td>4<sup>th</sup></td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Total:</strong></td>
+    <td><strong></strong></td>
+    <td><strong></strong></td>
+  </tr>
+</table>
+</div>
 <div class="scoreTile">
 <div class="centeredText"><strong>MML: 2012-2013</strong></div><br/>
 <table width="200" border="1" class="centerTable">
@@ -118,8 +174,9 @@
 </table>
 </div>
 <div class="scoreTile">
-<div class="centeredText"><strong>MAML 2013</strong><br/><br/>
-<strong>Score:</strong>80</div>
+<div class="centeredText"><strong>MAML 2013</strong><br/><br/><br/><br/><br/><br/>
+<strong><div class="bigScoreText">80 points</p></strong>
+</div>
 </div>
 </div>
 </body>
